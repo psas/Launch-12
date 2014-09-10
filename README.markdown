@@ -1,11 +1,14 @@
-# PSAS Launch-12
+# PSAS Launch 12
 
 **L-12** is the 13th launch in Portland State Aerospace Society history. For a
 full program launch history see [psas.pdx.edu](http://psas.pdx.edu/).
 
-## Scheduled Launch: September 28th, 2014!
+## Scheduled Launch: Spring 2015
 
-We hope to launch in Central Oregon on Septemeber 28th. This will be a follow-on [fix it fix it fix it](https://www.youtube.com/watch?v=1Isjgc0oX0s) flight to our "system shakedown" [July 20th Launch-11](https://github.com/psas/Launch-11) flight.
+We currently plan to launch in Central Oregon in early 2015.  This
+will be a follow-on [fix it fix it fix it](https://www.youtube.com/watch?v=1Isjgc0oX0s)
+flight to our "system shakedown" [July 20th Launch-11](https://github.com/psas/Launch-11)
+flight.
 
 # L-12 Objectives
 
