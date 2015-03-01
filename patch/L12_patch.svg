@@ -24,8 +24,8 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.3654321"
-     inkscape:cx="202.5"
+     inkscape:zoom="1.1827161"
+     inkscape:cx="203.34551"
      inkscape:cy="135.52037"
      inkscape:document-units="in"
      inkscape:current-layer="layer1"
@@ -273,18 +273,27 @@
        id="path4605"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccccc" />
-    <text
-       xml:space="preserve"
+    <g
+       transform="matrix(0.90621567,0.42281575,-0.42281575,0.90621567,0,0)"
        style="font-size:25px;font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Orbitron;-inkscape-font-specification:Orbitron Heavy"
-       x="473.9353"
-       y="817.92822"
-       id="text4240"
-       sodipodi:linespacing="125%"
-       transform="matrix(0.90621567,0.42281575,-0.42281575,0.90621567,0,0)"><tspan
-         sodipodi:role="line"
-         id="tspan4242"
-         x="473.9353"
-         y="817.92822">PSAS</tspan></text>
+       id="text4240">
+      <path
+         d="m 475.3353,799.95322 0,17.975 3.875,0 0,-5.775 c 0.025,0.025 0.075,0.025 0.075,0.025 0,-0.1 -0.025,-0.15 -0.075,-0.15 l 10.4,-0.025 c 2.05,0 3.725,-1.675 3.725,-3.7 l 0,-4.65 c 0,-2.025 -1.675,-3.7 -3.725,-3.7 l -14.275,0 m 3.875,3.875 10.2,0 0,4.275 -10.2,0 0,-4.275"
+         style=""
+         id="path3034" />
+      <path
+         d="m 512.98569,803.62822 c 0,-2.05 -1.675,-3.7 -3.7,-3.7 l -10.6,0 c -2.04999,0 -3.7,1.65 -3.7,3.7 l 0,3.55 c 0,2.05 1.65001,3.7 3.7,3.7 l 10.375,0 0,3.15 -10.2,0 0,-1.475 -3.875,0 0,1.675 c 0,2.05 1.65001,3.7 3.7,3.7 l 10.6,0 c 2.025,0 3.7,-1.65 3.7,-3.7 l 0,-3.55 c 0,-2.05 -1.675,-3.7 -3.7,-3.7 l -10.425,0 0,-3.15 10.2,0 0,1.475 3.925,0 0,-1.675"
+         style=""
+         id="path3036" />
+      <path
+         d="m 519.41733,799.92822 c -2.04999,0 -3.7,1.65 -3.7,3.7 l 0,14.3 3.875,0 0,-5.8 10.2,0 0,5.8 3.925,0 0,-14.3 c 0,-2.05 -1.675,-3.7 -3.725,-3.7 l -10.575,0 m 0.175,8.3 0,-4.4 10.2,0 0,4.4 -10.2,0"
+         style=""
+         id="path3038" />
+      <path
+         d="m 554.44077,803.62822 c 0,-2.05 -1.675,-3.7 -3.7,-3.7 l -10.6,0 c -2.05,0 -3.7,1.65 -3.7,3.7 l 0,3.55 c 0,2.05 1.65,3.7 3.7,3.7 l 10.375,0 0,3.15 -10.2,0 0,-1.475 -3.875,0 0,1.675 c 0,2.05 1.65,3.7 3.7,3.7 l 10.6,0 c 2.025,0 3.7,-1.65 3.7,-3.7 l 0,-3.55 c 0,-2.05 -1.675,-3.7 -3.7,-3.7 l -10.425,0 0,-3.15 10.2,0 0,1.475 3.925,0 0,-1.675"
+         style=""
+         id="path3040" />
+    </g>
     <path
        style="fill:#557891;fill-opacity:1;stroke:none"
        d="m 265.82488,931.4437 -27.32855,-25.67879 1.29111,7.38803 -26.03744,-18.29076 31.37882,28.52402 -1.29111,-7.38803 z"
@@ -298,17 +307,26 @@
        height="22.5"
        x="-67.5"
        y="771.11218" />
-    <text
-       xml:space="preserve"
+    <g
+       transform="matrix(0.90648697,-0.42223379,0.42223379,0.90648697,0,0)"
        style="font-size:25px;font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Orbitron;-inkscape-font-specification:Orbitron Heavy"
-       x="-177.39565"
-       y="989.21417"
-       id="text4240-1"
-       sodipodi:linespacing="125%"
-       transform="matrix(0.90648697,-0.42223379,0.42223379,0.90648697,0,0)"><tspan
-         sodipodi:role="line"
-         id="tspan4265"
-         x="-177.39565"
-         y="989.21417">L-12</tspan></text>
+       id="text4240-1">
+      <path
+         d="m -175.97065,989.21417 18,0 0,-3.9 -14.125,0 0,-14.125 -3.875,0 0,18.025"
+         style=""
+         id="path3025" />
+      <path
+         d="m -146.01322,979.91417 -10.425,0 0,3.825 10.425,0 0,-3.825"
+         style=""
+         id="path3027" />
+      <path
+         d="m -144.94877,978.06417 5.075,0 0.8,-0.975 -0.025,0 0.05,-0.05 0,12.175 3.825,0 0,-18 -3.975,0 -5.75,6.85"
+         style=""
+         id="path3029" />
+      <path
+         d="m -130.13315,971.21417 c -1.99999,0 -3.65,1.625 -3.65,3.625 l 0,1.65 3.825,0 0,-1.45 10.025,0 0,3.575 -10.2,0 c -1.99999,0 -3.65,1.625 -3.65,3.625 l 0,6.975 17.675,0 0,-3.825 -13.85,0 0,-2.925 10.2,0 c 2,0 3.65,-1.65 3.65,-3.65 l 0,-3.975 c 0,-2 -1.65,-3.625 -3.65,-3.625 l -10.375,0"
+         style=""
+         id="path3031" />
+    </g>
   </g>
 </svg>
