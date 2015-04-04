@@ -13,6 +13,9 @@ will be a follow-on [fix it fix it fix it](https://www.youtube.com/watch?v=1Isjg
 flight to our "system shakedown" [July 20th Launch-11](https://github.com/psas/Launch-11)
 flight.
 
+## [Current Launch Issue List](https://github.com/psas/Launch-12/issues)
+
+
 # L-12 Objectives
 
  1. **Launch** our LV2.3 airframe fall 2014
@@ -39,10 +42,11 @@ flight.
       - Include control data in telemetry
    - Record raw GPS RF environment to SD card
    - Digital Video
-      - Downward facing camera
-      - Record locally
-      - Live digital feed of camera to ground in integrated telemetry stream
-      - Record on ground
-      - Secondary upward facing camera
-      - Real time ground display
-
+      - Downward facing camera:
+        - Record locally
+        - Live digital feed of camera to ground in integrated telemetry stream
+        - Record on ground
+        - Real time ground display
+      - Outward facing camera
+        - Record localy
+        - Optionally stream to ground
