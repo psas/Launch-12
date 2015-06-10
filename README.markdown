@@ -8,7 +8,7 @@ full program launch history see [psas.pdx.edu](http://psas.pdx.edu/).
 
 ## Scheduled Launch: July 19th, 2015
 
-We currently plan to launch in Central Oregon in June 2015.  This
+We currently plan to launch in Central Oregon in July 2015.  This
 will be a follow-on [fix it fix it fix it](https://www.youtube.com/watch?v=1Isjgc0oX0s)
 flight to our "system shakedown" [July 20th Launch-11](https://github.com/psas/Launch-11)
 flight.
