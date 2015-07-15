@@ -1,0 +1,3 @@
+[submodule "simulation/roll-sim/roll-control"]
+	path = simulation/roll-sim/roll-control
+	url = https://github.com/psas/roll-control.git
