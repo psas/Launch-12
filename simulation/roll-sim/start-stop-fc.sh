@@ -1,7 +1,7 @@
 #!/bin/sh
 
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
-DAEMON="/home/natronics/PSAS/FlightComputer/av3-fc/fc"
+DAEMON="/home/natronics/PSAS/flight-computer/av3-fc/fc"
 NAME=fc
 DESC=fc
 PROJECTPATH="/home/natronics/PSAS/Launches/12/Launch-12/simulation/roll-sim/"
