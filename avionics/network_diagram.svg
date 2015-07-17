@@ -421,7 +421,7 @@
            sodipodi:role="line"
            id="tspan3713"
            x="2160"
-           y="696.34747">10.0.0.10/24</tspan></text>
+           y="696.34747">10.0.5.100-254</tspan></text>
     </g>
     <g
        id="g6698-4-8-1-2"
@@ -635,7 +635,7 @@
            sodipodi:role="line"
            id="tspan5893-4"
            x="382.5"
-           y="129.862">10.0.0.X</tspan></text>
+           y="129.862">10.0.5.X</tspan></text>
     </g>
     <path
        style="fill:#709afa;fill-opacity:1;stroke:#e31d1d;stroke-width:4.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
@@ -953,7 +953,7 @@
            sodipodi:role="line"
            id="tspan5295"
            x="382.5"
-           y="129.862">10.0.0.2</tspan></text>
+           y="129.862">10.0.3.2</tspan></text>
     </g>
     <rect
        style="fill:none;stroke:#959595;stroke-width:4.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.53807104;stroke-dasharray:none;stroke-dashoffset:0"
@@ -1426,7 +1426,7 @@
            sodipodi:role="line"
            id="tspan5410"
            x="382.5"
-           y="84.862">Bullet</tspan></text>
+           y="84.862">tower-link</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text5676-8-8-8-30-14-7-9-0"
@@ -1437,7 +1437,7 @@
            sodipodi:role="line"
            id="tspan5412"
            x="382.5"
-           y="129.862">10.0.3.3</tspan></text>
+           y="129.862">10.0.3.7</tspan></text>
     </g>
     <path
        style="fill:none;stroke:#709afa;stroke-width:4.5;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
@@ -1681,7 +1681,7 @@
            sodipodi:role="line"
            id="tspan5893-7"
            x="382.5"
-           y="129.862">10.0.0.X</tspan></text>
+           y="129.862">10.0.1.X</tspan></text>
     </g>
     <path
        style="fill:none;stroke:#709afa;stroke-width:4.5;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"

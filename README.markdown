@@ -8,10 +8,22 @@ full program launch history see [psas.pdx.edu](http://psas.pdx.edu/).
 
 ## Scheduled Launch: July 19th, 2015
 
-We currently plan to launch in Central Oregon in July 2015.  This
+We currently plan to launch in Central Oregon on Sunday July 19th, 2015.  This
 will be a follow-on [fix it fix it fix it](https://www.youtube.com/watch?v=1Isjgc0oX0s)
 flight to our "system shakedown" [July 20th Launch-11](https://github.com/psas/Launch-11)
 flight.
+
+### Launch Logistics
+
+- See the [PSAS Calendar](http://psas.pdx.edu/Schedule/) for our launch weekend timing. Basically:
+   - Friday 7/17 Noon - 6pm: Pack the MCECS Trailer
+   - Saturday 7/18 9am: Meet at the MCECS Trailer (see the map in the calendar link)
+   - Satuday 7/18 10am - 2pm: Drive to the OROC Brothers Oregon launch site
+   - Satuday 7/18 11pm: Stargazing!
+   - Sunday 7/19 10am - 2pm: Our scheduled launch window, with an emphasis on 10am (wish us luck)
+   - Sunday 7/19 early evening: pack and go home!
+- Here are [directions to getting to the launch site](http://www.oregonrocketry.com/?page_id=78).
+- For last minute coordination, call Andrew at 503-708-7711.
 
 ## [Current Launch Issue List](https://github.com/psas/Launch-12/issues)
 
