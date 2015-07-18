@@ -3,7 +3,7 @@
 This weekend Portland State Aerospace Society (PSAS) is heading out to the
 Central Oregon Desert to fly our "Launch Vehicle 2" or "LV2" rocket for the 7th
 time! This launch will be the 13th official launch for the club and has an
-exciting set experiments on board.
+exciting set of experiments on board.
 
 The launch is scheduled for **10:00 am Sunday July 19th**. Follow
 [@pdxaerospace](https://twitter.com/pdxaerospace) on twitter for up-to-date
@@ -71,7 +71,7 @@ inquisitive rocketeers everywhere.
  - [Make a charitable donations](https://cconn.foundation.pdx.edu/ccon/new_gift.do?action=newGift&giving_page_id=7&site=giving)
  - [Our open-source projects on Github](https://github.com/psas)
  - [PSAS on Facebook](https://www.facebook.com/pdxaerospace)
- - [@pdxaerspace](https://twitter.com/pdxaerospace)
+ - [@pdxaerospace](https://twitter.com/pdxaerospace)
  - [YouTube](https://www.youtube.com/user/PSASRockets)
  - [Flickr](https://www.flickr.com/photos/pdxaerospace)
  - [Launch 12 Data](https://github.com/psas/Launch-12)
@@ -83,7 +83,7 @@ We'll be "live tweeting" our launch on twitter, follow us or simply refresh the
 page Sunday morning to get up-to-the-second info on the flight, pictures and
 more.
 
- - [@pdxaerspace](https://twitter.com/pdxaerospace)
+ - [@pdxaerospace](https://twitter.com/pdxaerospace)
 
 
 If all goes well we'll mirror our telemetry in real time this launch! This is an
