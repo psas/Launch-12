@@ -1,4 +1,4 @@
-## Failure
+## Failure 
 
 LV2.1 uses a standard dual-deploy parachute system: two commercial off-the-shelf (COTS) flight computers (a Telemetrum v3 and an ARTS) fire deploy a small drogue at apogee, the rocket falls quickly to a lower altitude, and then the main is deployed for a slow descent at touchdown.
 
@@ -10,7 +10,7 @@ In Launch-12, the main parachute deployed right at apogee, along with the drogue
 
 We first blamed a failure of the wiring to the pyrotechnic charges. We have a total of 6 leads:
 
-- 4 leads going to the LV2 Nose Separation Ring (NSR), any of which should fire the NSR and relase the drogue.
+- 4 leads going to the LV2 Nose Separation Ring (NSR), any of which should fire the NSR and release the drogue.
 - 2 leads going to two independent line cutters for releasing the main parachute.
 
 We wired these e-matches to the COTS flight computers:
@@ -22,7 +22,7 @@ We wired these e-matches to the COTS flight computers:
   - 2 NSR leads in parallel to "Apogee" 
   - 1 line cutter to "Main"
 
-If any of the "Main" and "Appogee" leads were crossed, then that would have explained the main deploying with the drogue. Post-flight, we ohm metered all of the leads and wires, and nothing was miswired. We blame Gavin's amazing color-coded, one-to-one connectorizing job that totally made this impossible. Yay Gavin!
+If any of the "Main" and "Apogee" leads were crossed, then that would have explained the main deploying with the drogue. Post-flight, we ohm metered all of the leads and wires, and nothing was miswired. We blame Gavin's amazing color-coded, one-to-one connectorizing job that totally made this impossible. Yay Gavin!
 
 ### Investigation 2: Bad Main settings in the COTS FCs
 
@@ -32,7 +32,7 @@ The Telemetrum log said that it blew the apogee leads 2 seconds after apogee, an
 
 The ARTS log said it blew the apogee leads 2 seconds after apogee as well, and then the log timed out with no other events after XXX seconds. Because there were no other events many seconds after apogee, the ARTS wasn't to blame either.
 
-### Investigtation 3: Failure of the main chute retainer system
+### Investigation 3: Failure of the main chute retainer system
 
 We thought that perhaps the loop / cord system that holds the main chute in at apogee somehow failed mechanically. Dave's investigation contradicted this: he found the line-cutter cut loop, and inspected that rope, and it all seemed correct.
 
@@ -44,6 +44,6 @@ We hypothesize that the main bag failed at apogee - it "zippered" off of its web
 
 ![Figure 1 - picture of whiteboard](photos/2015-07-22 00.17.57-resized.jpg "Figure 1: Main parachute failure mode")
 
+In Figure 1 above, the drawing on the left shows how the main parachute is kept in place at apogee under normal circumstances. The middle drawing shows what we think happened in Launch-12: A very acute angle on the drogue pulled the webbing on the main bag off to one side, breaking some of the threads. This then zippered the bag, allows the parachute to come out of the recovery module and get into the airstream, as depicted in the drawing on the right.
 
-
-
+So: does the physical evidence support this? In short, yes.
