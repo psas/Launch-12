@@ -1,10 +1,10 @@
-## Failure 
+## The Failure 
 
 LV2.1 uses a standard dual-deploy parachute system: two commercial off-the-shelf (COTS) flight computers (a Telemetrum v3 and an ARTS) fire deploy a small drogue at apogee, the rocket falls quickly to a lower altitude, and then the main is deployed for a slow descent at touchdown.
 
 In Launch-12, the main parachute deployed right at apogee, along with the drogue. It wasn't supposed to do this, and we were **extremely** lucky that the *20 minutes* (instead of like 2 minutes) it took to fall 5.1 km from apogee on the main chute, the rocket didn't drift many km away. This would have made recovery a total pain.
 
-## Investigation
+## The Investigation
 
 ### Investigation 1: crossing main and apogee
 
