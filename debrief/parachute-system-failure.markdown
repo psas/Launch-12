@@ -47,3 +47,29 @@ We hypothesize that the main bag failed at apogee - it "zippered" off of its web
 In Figure 1 above, the drawing on the left shows how the main parachute is kept in place at apogee under normal circumstances. The middle drawing shows what we think happened in Launch-12: A very acute angle on the drogue pulled the webbing on the main bag off to one side, breaking some of the threads. This then zippered the bag, allows the parachute to come out of the recovery module and get into the airstream, as depicted in the drawing on the right.
 
 So: does the physical evidence support this? In short, yes.
+
+Figure 2 shows the angle of the drogue when it's first deployed. Note that the rocket has passed apogee, and is now accelerating down to the ground like a lawndart. The drogue parachute has deployed, and just inflated. The next few frames show the drogue "yanking" the rocket airframe violently around so that it's upright. In fact, in this process, the RasPi2 camera module is yanked out of its slide-out case and now dangles in the airstream by it's custom Ethernet cord.
+
+![Figure 2 - Angle of Drogue Parachute](photos/screenshot-1.png "Figure 2: Angle of Drogue Parachute")
+
+Figure 3 shows the blue main parachute bag poking out of the top of the recovery module a few seconds later. This shouldn't be happening at this point; the drogue line should be holding the bag down.
+
+![Figure 3 - Main parachute bag poking out of the recovery module](photos/screenshot-2.png "Figure 3: Main parachute bag poking out of the recovery module")
+
+Figure 4 shows the webbing from the blue main parachute flapping in the wind a few seconds after the main deploy. This shouldn't have happened; we should see the blue bag attached here :) 
+
+![Figure 4 - Main parachute bag webbing flapping in the breeze](photos/screenshot-3.png "Figure 4: Main parachute bag webbing flapping in the breeze")
+
+Figure 5 shows the webbing again - this time you can see the threads hanging out of the webbing.
+
+![Figure 5 - Main parachute bag webbing with threads](photos/screenshot-4.png "Figure 5: Main parachute bag webbing with threads")
+
+Figure 6 shows a shot of the nosecone with the small drogue bag still attached, which is what we expect.
+
+![Figure 6 - Nosecone and drogue chute bag](photos/screenshot-5.png "Figure 6: Nosecone and drogue chute bag")
+
+Figure 7 shows what we **think** is the zippered main parachute bag floating away at 5km, never to be found again, and showing that it somehow zippered off, thus letting the main out.
+
+![Figure 7 - Goodbye main parachute bag](photos/screenshot-6.png "Figure 7: Goodbye main parachute bag")
+
+
