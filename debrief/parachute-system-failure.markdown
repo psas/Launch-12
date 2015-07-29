@@ -42,7 +42,7 @@ That's when we found out that the main parachute bag was... missing.
 
 We hypothesize that the main bag failed at apogee - it "zippered" off of its webbing that held the main chute down at apogee. This let the main chute, which is under tremendous pressure, "balloon" out into the air stream, where it caught the wind and deployed.
 
-
+![Figure 1 - picture of whiteboard](photos/2015-07-22 00.17.57-resized.jpg "Figure 1: Main parachute failure mode")
 
 
 
