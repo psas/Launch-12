@@ -4,7 +4,7 @@ LV2.1 uses a standard dual-deploy parachute system: two commercial off-the-shelf
 
 In Launch-12, the main parachute deployed right at apogee, along with the drogue. It wasn't supposed to do this, and we were **extremely** lucky that the *20 minutes* (instead of like 2 minutes) it took to fall 5.1 km from apogee on the main chute, the rocket didn't drift many km away. This would have made recovery a total pain.
 
-Here's a [video of the flight](https://www.youtube.com/watch?v=YUP2_m3gPiM) - you can see the main chutes come out at apogee (as well as the *camera fall out of the airframe and dangle on its Ethernet cord*... although that's another story.
+Here's a [video of the flight](https://www.youtube.com/watch?v=YUP2_m3gPiM) - you can see the main chutes come out at apogee. You can also see the *camera fall out of the airframe and dangle on its Ethernet cord*... although that's another story.
 
 ## The Investigation
 
