@@ -24,7 +24,11 @@ pdf: latex
 	pdflatex book.tex
 	pdflatex book.tex
 
-%.md: $(NOTEBOOKS)
+fc-data:
+	mkdir -p fc-data
+	cd fc-data; log2csv ../LAUNCH/flightcomputer.log
+
+%.md: fc-data $(NOTEBOOKS)
 	ipython nbconvert --execute --to=markdown --template=output-format.tlp $^
 
 cleanpdf:
