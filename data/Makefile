@@ -1,5 +1,5 @@
 NOTEBOOKS=$(wildcard *.ipynb)
-MARKDOWN=$(NOTEBOOKS:.ipynb=.markdown)
+MARKDOWN=$(NOTEBOOKS:.ipynb=.md)
 
 HTMLARGS =  --standalone \
             --number-sections \
@@ -24,8 +24,8 @@ pdf: latex
 	pdflatex book.tex
 	pdflatex book.tex
 
-%.markdown: $(NOTEBOOKS)
-	ipython nbconvert --execute --to=markdown $^
+%.md: $(NOTEBOOKS)
+	ipython nbconvert --execute --to=markdown --template=output-format.tlp $^
 
 cleanpdf:
 	rm -f *.aux *.log *.log *.toc *.out
