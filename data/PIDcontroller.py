@@ -47,4 +47,4 @@ class PIDController:
         # Add the error to the integral model
         self.integrator += error
 
-        return output
+        return output, proportional, integral, derivative

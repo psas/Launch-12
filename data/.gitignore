@@ -2,3 +2,9 @@
 .ipynb_checkpoints
 expanded
 fc-data
+tele-data
+*.aux
+*.log
+*.out
+*.tex
+*.toc

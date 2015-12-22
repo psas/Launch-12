@@ -11,25 +11,31 @@ LATEXARGS = --standalone \
 
 
 
-all: $(MARKDOWN)
+all: data-unwrap $(MARKDOWN)
 
 
-html: $(MARKDOWN)
+html: data-unwrap  $(MARKDOWN)
 	pandoc $(HTMLARGS) *.md > book.html
 
-latex: $(MARKDOWN)
+latex: data-unwrap $(MARKDOWN)
 	pandoc $(LATEXARGS) *.md -t latex > book.tex
 
 pdf: latex
 	pdflatex book.tex
 	pdflatex book.tex
 
+data-unwrap: fc-data tele-data
+
 fc-data:
 	mkdir -p fc-data
 	cd fc-data; log2csv ../LAUNCH/flightcomputer.log
 
-%.md: fc-data $(NOTEBOOKS)
-	ipython nbconvert --execute --to=markdown --template=output-format.tlp $^
+tele-data:
+	mkdir -p tele-data
+	cd tele-data; log2csv ../LAUNCH/telemetry.log
+
+%.md: $(NOTEBOOKS)
+	ipython nbconvert --execute --to=markdown --config ipython_convert.py --template=output-format.tlp $^
 
 cleanpdf:
 	rm -f *.aux *.log *.log *.toc *.out
