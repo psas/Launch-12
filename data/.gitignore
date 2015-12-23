@@ -8,3 +8,6 @@ tele-data
 *.out
 *.tex
 *.toc
+
+# output
+*.pdf

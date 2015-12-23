@@ -4,9 +4,9 @@ Raw flight comptuer data is in the `LAUNCH` directory. Subsystems and COTS FC da
 
 ## Anaylsis
 
- - [First Look](first-look.md)
- - [Roll Control Effectiveness](rollanalysis_part2.md)
- - [Geiger Counter](geiger.md)
- - [Telemetry Quality](telemetry-quality.md)
- - [COTS GPS Receiver](venus8-gps.md)
- - [Missing Data And IMU Arrival Jitter](seq_failure_timing_jitter.md)
+ - [First Look](notebooks/first-look.md)
+ - [Roll Control Effectiveness](notebooks/rollanalysis_part2.md)
+ - [Geiger Counter](notebooks/geiger.md)
+ - [Telemetry Quality](notebooks/telemetry-quality.md)
+ - [COTS GPS Receiver](notebooks/venus8-gps.md)
+ - [Missing Data And IMU Arrival Jitter](notebooks/seq_failure_timing_jitter.md)
