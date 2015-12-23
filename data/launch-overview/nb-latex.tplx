@@ -1,0 +1,10 @@
+((*- extends 'base.tplx' -*))
+
+((* block header *))
+((* endblock header *))
+
+((* block maketitle *))
+((* endblock maketitle *))
+
+((* block input scoped *))
+((* endblock input *))
