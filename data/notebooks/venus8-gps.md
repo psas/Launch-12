@@ -6,5 +6,7 @@ We had a comercial off the shelf GPS chip ride along with us in the rocket. Regu
 
 
 
+![png](venus8-gps_files/venus8-gps_1_0.png)
+
 
 

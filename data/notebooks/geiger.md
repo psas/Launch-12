@@ -11,7 +11,11 @@ We had a Geiger counter mounted in the payload bay.
 
 
 
+![png](geiger_files/geiger_2_0.png)
 
+
+
+![png](geiger_files/geiger_2_1.png)
 
 
 

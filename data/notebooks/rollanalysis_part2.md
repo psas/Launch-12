@@ -16,9 +16,13 @@ The gyro readings are noisy so I will need to eliminate some of that noise to ma
 
 
 
+![png](rollanalysis_part2_files/rollanalysis_part2_1_0.png)
 
 
 
+
+
+![png](rollanalysis_part2_files/rollanalysis_part2_2_0.png)
 
 
     Average filtered angular acceleration: 3.96 deg/s^2
@@ -35,6 +39,8 @@ First lets glance at the canard angle.
 
 
 
+![png](rollanalysis_part2_files/rollanalysis_part2_5_0.png)
+
 
 Seems as though our algorithm worked as intended.
 ### PID controller output
@@ -42,6 +48,8 @@ Now lets look at the outputs given by the PID controller. We didn't save the out
 
 
 
+
+![png](rollanalysis_part2_files/rollanalysis_part2_7_0.png)
 
 
     Average output of proportional stage: 237.20
@@ -60,11 +68,15 @@ i.e. ang_acc = canard_ang_acc + unknown_ang_acc
 
 
 
+![png](rollanalysis_part2_files/rollanalysis_part2_10_0.png)
+
 
 ### Angular acceleration caused by canards
 
 
 
+
+![png](rollanalysis_part2_files/rollanalysis_part2_12_0.png)
 
 
 ### How does the unknown angular acceleration scale with velocity?
@@ -75,6 +87,8 @@ Let's see how they compare.
 
 
 
+
+![png](rollanalysis_part2_files/rollanalysis_part2_14_0.png)
 
 
 Doesn't seem to scale at all. This is absolutely the worst case scenario that we envisioned.

@@ -25,6 +25,8 @@ Let's take a look at the accelerometer readings first as the velocity of the roc
 
 
 
+![png](rollanalysis_initial_files/rollanalysis_initial_4_0.png)
+
 
 These are the expected curves for velocity and altitude. This is a good sign as these played a crucial role in the simulation that was used for designing the roll control algorithm.  
 
@@ -34,6 +36,8 @@ Now let's take a look at the gyro readings and see how the roll control algorith
 
 
 
+
+![png](rollanalysis_initial_files/rollanalysis_initial_7_0.png)
 
 
     Max angular position: 1422.57 degrees

@@ -52,6 +52,8 @@ If we chart the difference in recieve time between each and every sample of IMU 
 
 
 
+![png](seq_failure_timing_jitter_files/seq_failure_timing_jitter_4_0.png)
+
 
 The expeced time between samples from the ADIS IMU is 1.22 ms. However there are two big gaps in the data:
 
@@ -70,11 +72,15 @@ Here we chart (linear scale this time) just the non-gap diffs
 
 
 
+![png](seq_failure_timing_jitter_files/seq_failure_timing_jitter_8_0.png)
+
 
 ## Jitter
 
 
 
+
+![png](seq_failure_timing_jitter_files/seq_failure_timing_jitter_10_0.png)
 
 
 It's not gaussian. In fact the bump at almost exactly 1 ms is hard to explain.

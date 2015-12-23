@@ -24,9 +24,13 @@ Here are the acceleration curves for the flight.
 
 
 
+![png](first-look_files/first-look_5_0.png)
 
 
 
+
+
+![png](first-look_files/first-look_6_0.png)
 
 
 # Roll Rate
@@ -35,6 +39,8 @@ This launch included a student designed roll control experiment. Four small cana
 
 
 
+
+![png](first-look_files/first-look_8_0.png)
 
 
 # Total Roll Angle
@@ -46,6 +52,8 @@ How much did we spin?
 
 
 
+![png](first-look_files/first-look_11_0.png)
+
 
 This was worse that expected performance, but also includes a lot of data that we'll find useful for future flights!
 
@@ -56,9 +64,13 @@ So how did the control system react to the flight?
 
 
 
+![png](first-look_files/first-look_13_0.png)
 
 
 
+
+
+![png](first-look_files/first-look_14_0.png)
 
 
 
