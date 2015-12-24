@@ -2,11 +2,13 @@
 
 # Introduction
 
-![](../../patch/L12_patch.png)\ Launch 12 was the 13th launch in Portland State Aerospace Society history. At 11:15 am, July 19th, 2015 the 34 kilogram [LV2](http://psas.github.io/rockets/#LV22) rocket was launched with a commercial CTI N2501-W solid rocket motor.
+![](images/L12_patch.png)\ Launch 12 was the 13th launch in Portland State Aerospace Society history. At 11:15 am, July 19th, 2015 the 34 kilogram [LV2](http://psas.github.io/rockets/#LV22) rocket was launched with a commercial CTI N2501-W solid rocket motor.
 
 The launch was very successful. We launched earlier than usual and on the first try of the countdown. We met our main goals of a safe flight to the projected altitude, and had the smoothest ground systems setup and tear down to date for PSAS.
 
 Approximately 40 GB of video and instrument data was collected during the flight.
+
+![Liftoff of LV2 for Launch 12](images/L12-liftoff.jpg)\ 
 
 ## Instruments
 
