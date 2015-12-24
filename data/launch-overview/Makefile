@@ -11,12 +11,8 @@ LATEXARGS = --standalone \
 
 all: pdf
 
-latex: $(MLATEX) $(LATEX)
-	pandoc $(LATEXARGS) *.tex -f latex --parse-raw  -t latex > launch-overview.tex
-
-pdf: latex
-	pdflatex launch-overview.tex
-	pdflatex launch-overview.tex
+pdf: $(MLATEX) $(LATEX)
+	pandoc $(LATEXARGS) *.tex -f latex --parse-raw  -o launch-overview.pdf
 
 %.tex: %.md
 	pandoc $^ -f markdown --parse-raw -t latex -o $@
