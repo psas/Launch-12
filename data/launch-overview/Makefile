@@ -22,7 +22,7 @@ pdf: latex
 	pandoc $^ -f markdown --parse-raw -t latex -o $@
 
 %.tex: %.ipynb
-	ipython nbconvert --execute --to=latex --template=nb-latex.tplx $^
+	ipython nbconvert --execute --config ipython_convert.py --to=latex --template=nb-latex.tplx $^
 
 cleanpdf:
 	rm -f *.aux *.log *.log *.toc *.out
