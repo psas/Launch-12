@@ -1,2 +1,2 @@
 \usepackage{adjustbox}
-\usepackage[top=1.5in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage[top=1.5in, bottom=1in, left=1in, right=1in,paperwidth=8.5in,paperheight=11in]{geometry}

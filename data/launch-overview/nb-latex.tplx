@@ -8,3 +8,10 @@
 
 ((* block input scoped *))
 ((* endblock input *))
+
+((*- block figure scoped -*))
+    \begin{center}
+    \includegraphics{((( filename )))}
+    \end{center}
+    { \hspace*{\fill} \\}
+((*- endblock figure -*))
