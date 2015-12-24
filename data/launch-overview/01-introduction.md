@@ -29,3 +29,16 @@ The Venus8 is an off-the-shelf GPS chip.
 ### JGPS
 
 The JGPS experiment was an experimental board that recored the raw radio signals in the GPS L1 band straight to disk at 4 million samples per second. This should allow us to reconstruct GPS position fixes after the flight and learn a lot about operating GPS devices on rockets.
+
+
+## COTS Flight Computers
+
+We also have data from the two commercial-off-the-shelf flight computers that control the parachute deployment. They usually consist of a microcontroller, and one or more sensors. They will close a circuit when apogee is detected and later at or below a fixed altitude. This is used to fire the pyros that open either a drouge parachute or a large main parachute.
+
+### TeleMetrium
+
+We also have a version 1 TeleMetrium device by AltusMetrum. It has pressure, single axis acceleration, GPS and a 70 cm HAM radio for live telemetry. This is our main recovery device.
+
+### ARTS2
+
+The ARTS2 is a simple recovery device by Ozark Aerospace. It has a single axis accelerometer and a pressure sensor.
