@@ -10,10 +10,17 @@ LATEXARGS = --standalone \
             --metadata=title:"Launch 12 Data Overview" \
             --metadata=author:"Portland State Aerospace Society"
 
+MARKARGS  = --standalone \
+            --table-of-contents
+
 all: pdf
 
 pdf: $(MLATEX) $(LATEX)
 	pandoc $(LATEXARGS) *.tex -f latex --parse-raw  -o launch-overview.pdf
+
+markdown: $(MLATEX) $(LATEX)
+	pandoc $(MARKARGS) *.tex -f latex -o README.markdown
+	sed -i -- 's/.pdf/.png/g' README.markdown
 
 %.tex: %.md
 	pandoc $^ -f markdown --parse-raw -t latex -o $@
