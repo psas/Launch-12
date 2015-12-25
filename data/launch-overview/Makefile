@@ -5,6 +5,7 @@ MLATEX=$(MARKDOWN:.md=.tex)
 
 LATEXARGS = --standalone \
             --table-of-contents \
+            --chapters \
             --include-in-header header.latex \
             --metadata=title:"Launch 12 Data Overview" \
             --metadata=author:"Portland State Aerospace Society"
