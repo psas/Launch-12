@@ -5,7 +5,7 @@
 **L-12** was the 13th launch in Portland State Aerospace Society history. For a
 full program launch history see [psas.pdx.edu](http://psas.pdx.edu/).
 
-## Launch: 11:15 am, July 19th, 2015
+## Liftoff: July 19, 2015 11:17:11.45 Pacific Time
 
  - Motor: **CTI N2501-W**
  - GLOW: **34.0 kg**
