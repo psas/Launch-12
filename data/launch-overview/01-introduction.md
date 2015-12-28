@@ -2,13 +2,16 @@
 
 # Introduction
 
-![](images/L12_patch.png)\ Launch 12 was the 13th launch in Portland State Aerospace Society history. At 11:15 am, July 19th, 2015 the 34 kilogram [LV2](http://psas.github.io/rockets/#LV22) rocket was launched with a commercial CTI N2501-W solid rocket motor.
+![](images/L12_patch.png)\ Launch 12 was the 13th launch in Portland State Aerospace Society history. Liftoff was at precisely 11:17:11.45 AM Pacific Time, July 19th, 2015 the 34 kilogram [LV2](http://psas.github.io/rockets/#LV22) rocket was launched with a commercial CTI N2501-W solid rocket motor.
 
 The launch was very successful. We launched earlier than usual and on the first try of the countdown. We met our main goals of a safe flight to the projected altitude, and had the smoothest ground systems setup and tear down to date for PSAS.
 
 Approximately 40 GB of video and instrument data was collected during the flight.
 
-![Liftoff of LV2 for Launch 12](images/L12-liftoff.jpg)\ 
+![Liftoff of LV2 for Launch 12](images/L12-liftoff.jpg)\  
+
+> Liftoff!! of Launch Vehicle 2 in Central Oregon
+
 
 ## Instruments
 
@@ -26,12 +29,15 @@ The Bosch BMP180 is a barometric pressure and temperature sensor.
 
 ### Venus8
 
-The Venus8 is an off-the-shelf GPS chip.
+The SkyTraq VENUS838FLPX-L is an commercial-off-the-shelf GPS chip the returns full position solutions over a serial port. Like most other commercial GPS receivers it is not optimized for rocket flight.
 
 ### JGPS
 
 The JGPS experiment was an experimental board that recored the raw radio signals in the GPS L1 band straight to disk at 4 million samples per second. This should allow us to reconstruct GPS position fixes after the flight and learn a lot about operating GPS devices on rockets.
 
+![The GPS Subsystem Board](images/gps-v3.jpg)\ 
+
+> The GPS subsystem electronics with both Venus8 and SDR chips.
 
 ## COTS Flight Computers
 
