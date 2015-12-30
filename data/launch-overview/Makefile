@@ -7,31 +7,21 @@ MLATEX=$(MARKDOWN:.md=.tex)
 LATEXARGS = --standalone \
             --table-of-contents \
             --chapters \
-            --include-in-header header.latex \
+            --include-in-header formatting/header.latex \
             --metadata=title:"Launch 12 Data Overview" \
-            --metadata=author:"Portland State Aerospace Society"
-
-MARKARGS  = --standalone
+            --metadata=author:"Portland State Aerospace Society" \
+            --metadata=date:"January 01, 2016"
 
 all: pdf
 
 pdf: $(MLATEX) $(LATEX)
 	pandoc $(LATEXARGS) *.tex -f latex --parse-raw  -o launch-overview.pdf
 
-markdown: $(NBMARKDOWN)
-	cat *.md > README.markdown
-	sed -i -- 's/.pdf/.png/g' README.markdown
-	rm $(NBMARKDOWN)
-
 %.tex: %.md
 	pandoc $^ -f markdown --parse-raw -t latex -o $@
 
 %.tex: %.ipynb
-	ipython nbconvert --execute --config ipython_convert.py --to=latex --template=nb-latex.tplx $^
-
-%.md: %.ipynb
-	ipython nbconvert --execute --config ipython_convert.py --to=markdown --template=markdown.tpl $^
-
+	ipython nbconvert --execute --config formatting/ipython_convert.py --to=latex --template=formatting/nb-latex.tplx $^
 
 cleanpdf:
 	rm -f *.aux *.log *.log *.toc *.out
@@ -39,5 +29,6 @@ cleanpdf:
 clean:
 	rm -f $(LATEX)
 	rm -f $(MLATEX)
+	rm -f $(NBMARKDOWN)
 	rm -rf *_files/
 	rm -f launch-overview.*
