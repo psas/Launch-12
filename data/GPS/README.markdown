@@ -13,7 +13,7 @@ Files:
 
 ## Raw IQ Format
 
-We used the Maxim MAX2769 GPS RF front-end chip at 4.092 MHz sampling rate, using 2 bit ADC (sign/magnitude).
+We used the Maxim MAX2769 GPS RF front-end chip at 4.092 MHz sampling rate, 0 IF, using 2 bit ADC (sign/magnitude).
 
 This is stored 2 bits I, 2 bits Q, continuously in the file.
 
