@@ -15,35 +15,35 @@ full program launch history see [psas.pdx.edu](http://psas.pdx.edu/).
 
 # L-12 Objectives
 
- 1. ✓ **Launch** our LV2.3 airframe fall 2014
- 1. ✓ **Successful flight** to at least 75% of projected altitude; recover all hardware intact.
- 1. ✓ **Telemetry**
+ 1. :white_check_mark: **Launch** our LV2.3 airframe fall 2014
+ 1. :white_check_mark: **Successful flight** to at least 75% of projected altitude; recover all hardware intact.
+ 1. :white_check_mark: **Telemetry**
    - get data from:
-      - ✓ Inertial sensors
-      - ✓ Events (e.g., 'launch')
-      - X Commands
-   - ✓ Record telemetry on rocket
-   - ✓ Live stream to ground
-   - ✓ Record on ground
-   - ✓ Real time display on ground
-   - X Record on data creating device
+      - :white_check_mark: Inertial sensors
+      - :white_check_mark: Events (e.g., 'launch')
+      - :x: Commands
+   - :white_check_mark: Record telemetry on rocket
+   - :white_check_mark: Live stream to ground
+   - :white_check_mark: Record on ground
+   - :white_check_mark: Real time display on ground
+   - :x: Record on data creating device
  1. **Ground Support**
-   - ✓ Remote, safe, digital ignition control
-   - ✓ Effective recovery
-      - ✓ Coordination between recovery teams and mission control
-      - ✓ Know rocket location immediately after landing
-      - ✓ Easy transportation back to flight line
+   - :white_check_mark: Remote, safe, digital ignition control
+   - :white_check_mark: Effective recovery
+      - :white_check_mark: Coordination between recovery teams and mission control
+      - :white_check_mark: Know rocket location immediately after landing
+      - :white_check_mark: Easy transportation back to flight line
  1. **Experiments**
-   - ✓ Roll control
-      - ✓ Documented algorithm and analysis
-      - ✓ Include control data in telemetry
-   - ✓ Record raw GPS RF environment to SD card
+   - :white_check_mark: Roll control
+      - :white_check_mark: Documented algorithm and analysis
+      - :white_check_mark: Include control data in telemetry
+   - :white_check_mark: Record raw GPS RF environment to SD card
    - Digital Video
-      - Downward facing camera:
-        - Record locally
-        - X Live digital feed of camera to ground in integrated telemetry stream
-        - X Record on ground
-        - X Real time ground display
-      - X Outward facing camera
-        - X Record localy
-        - X Optionally stream to ground
+      - :white_check_mark: Downward facing camera:
+        - :white_check_mark: Record locally
+        - :x: Live digital feed of camera to ground in integrated telemetry stream
+        - :x: Record on ground
+        - :x: Real time ground display
+      - :x: Outward facing camera
+        - :x: Record localy
+        - :x: Optionally stream to ground
