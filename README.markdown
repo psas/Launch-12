@@ -15,6 +15,8 @@ full program launch history see [psas.pdx.edu](http://psas.pdx.edu/).
 
 # L-12 Objectives
 
+[Read the full debrief](debrief).
+
  1. :white_check_mark: **Launch** our LV2.3 airframe fall 2014
  1. :white_check_mark: **Successful flight** to at least 75% of projected altitude; recover all hardware intact.
  1. :white_check_mark: **Telemetry**
