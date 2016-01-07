@@ -1,13 +1,21 @@
+# python
 *.py[cod]
 .ipynb_checkpoints
-expanded
+
+# too big raw data
+flightcomputer-calibration.log
+flightcomputer.log
+
+# processed data folders
 fc-data
 tele-data
+full-flight
+cal-data
+
+# output junk
+*.pdf
 *.aux
 *.log
 *.out
 *.tex
 *.toc
-
-# output
-*.pdf
