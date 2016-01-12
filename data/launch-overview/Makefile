@@ -35,4 +35,5 @@ PSAS-launch-12-overview.pdf: $(PDF)
 clean:
 	rm -f $(NBMARKDOWN)
 	rm -rf *_files/
+	rm -f *.pyc
 	rm -f PSAS-launch-12-overview.pdf
