@@ -46,7 +46,7 @@
 {% endblock data_latex %}
 
 {% block data_pdf %}
-![]({{ output.metadata.filenames['image/png'] | path2url }})
+![]({{ output.metadata.filenames['application/pdf'] | path2url }})
 {% endblock data_pdf %}
 
 {% block data_html scoped %}
