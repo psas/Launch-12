@@ -6,7 +6,8 @@ LATEXARGS = --standalone \
             --chapters \
             --metadata=title:"Launch 12 Data Overview" \
             --metadata=author:"Portland State Aerospace Society" \
-            --metadata=date:"January 16, 2016"
+            --metadata=date:"January 16, 2016" \
+            --variable=geometry:"margin=1in"
 
 # List the files we want to build our pdf
 PDF=introduction.markdown \
