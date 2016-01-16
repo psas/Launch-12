@@ -39,6 +39,110 @@ class ADISData(object):
         self.acc_x_filter = lfilter(b, a, self.acc_x)
 
 
+class BMP1Data(object):
+
+    cal_AC1 = 408
+    cal_AC2 = -72
+    cal_AC3 = -14383
+    cal_AC4 = 32741
+    cal_AC5 = 32757
+    cal_AC6 = 23153
+    cal_B1 = 6190
+    cal_B2 = 4
+    cal_MB = -32767
+    cal_MC = -8711
+    cal_MD = 2868
+    mode = 4
+
+    def __init__(self, timestamp, pressure, temperature):
+        self.time = timestamp
+        self.pressure = pressure
+        self.temperature = temperature
+
+        # Fix up data
+        pressures = []
+        last_raw = 556878
+        for i, t in enumerate(self.time):
+
+            UT = int(self.temperature[i])
+            UP = int(self.pressure[i])
+            
+            msb =  (UP & 0xff000000) >> (8*3)
+            lsb =  (UP & 0x00ff0000) >> (8*2)
+            xlsb = (UP & 0x0000ff00) >> (8*1)
+
+            raw = ((msb << 16) + (lsb << 8) + xlsb) >> (8 - self.mode)
+            #print "Data: 0x%x" % UP
+            #print "MSB: 0x%x, LSB: 0x%x, xLSB: 0x%x" % (msb, lsb, xlsb)
+            #print "Raw: 0x%x" % raw
+            
+            # dump gaps
+            if abs(raw - last_raw) > 10000:
+                raw = last_raw
+            pressures.append(raw*(85.7/556878.0))
+            last_raw = raw
+            
+            """
+            X1 = ((UT - cal_AC6) * cal_AC5) >> 15
+            X2 = (cal_MC << 11) / (X1 + cal_MD)
+            
+            B5 = X1 + X2
+            #print 'B5 = {0}'.format(B5)
+            
+            # Pressure Calculations
+            B6 = B5 - 4000
+            #print 'B6 = {0}'.format(B6)
+            
+            X1 = (cal_B2 * (B6 * B6) >> 12) >> 11
+            X2 = (cal_AC2 * B6) >> 11
+            X3 = X1 + X2
+            B3 = (((cal_AC1 * 4 + X3) << mode) + 2) / 4
+            #print 'B3 = {0}'.format(B3)
+            
+            X1 = (cal_AC3 * B6) >> 13
+            X2 = (cal_B1 * ((B6 * B6) >> 12)) >> 16
+            X3 = ((X1 + X2) + 2) >> 2
+            B4 = (cal_AC4 * (X3 + 32768)) >> 15
+            #print 'B4 = {0}'.format(B4)
+          
+            B7 = (UP - B3) * (50000 >> mode)
+            #print 'B7 = {0}'.format(B7)
+            
+            if B7 < 0x80000000:
+                p = (B7 * 2) / B4
+            else:
+                p = (B7 / B4) * 2
+
+            X1 = (p >> 8) * (p >> 8)
+            X1 = (X1 * 3038) >> 16
+            X2 = (-7357 * p) >> 16
+            p = p + ((X1 + X2 + 3791) >> 4)
+            """
+
+        self.pressure = pressures
+        temps = []
+        for i, t in enumerate(self.time):
+            UT = int(self.temperature[i])
+
+            X1 = ((UT - self.cal_AC6) * self.cal_AC5) >> 15
+            X2 = (self.cal_MC << 11) / (X1 + self.cal_MD)
+            B5 = X1 + X2
+            temp = ((B5 + 8) >> 4) / 10.0
+            temps.append(temp)
+
+        self.temperature = temps
+
+
+def load_BMP1_data(source):
+    columns = loadtxt(source, delimiter=',', unpack=True)
+    timestamp = columns[1]
+    pressure = columns[2]
+    temperature = columns[3]
+
+    timestamp = subtract(timestamp, t_0)
+    timestamp = divide(timestamp, 1e9)
+    return timestamp, pressure, temperature
+
 def load_ADIS_data(source):
     columns = loadtxt(source, delimiter=',', unpack=True)
 
@@ -97,3 +201,4 @@ def cached_velocity():
 
 # Load data!
 adis = ADISData(*load_ADIS_data('../fc-data/ADIS.csv'))
+bmp1 = BMP1Data(*load_BMP1_data('../fc-data/BMP1.csv'))
