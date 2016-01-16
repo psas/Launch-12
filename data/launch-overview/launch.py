@@ -1,6 +1,7 @@
 """Common data and constants from Launch 12
 """
-from numpy import loadtxt, subtract, divide, multiply
+from numpy import loadtxt, subtract, divide
+from scipy.signal import butter, lfilter
 
 # Pysical Constants
 g_0 = 9.80665
@@ -14,8 +15,32 @@ M = 330.0
 # launch rail altitude
 rail_alt = 1389.360
 
-def ADIS_data():
-    columns = loadtxt("../fc-data/ADIS.csv", delimiter=',', unpack=True)
+
+class ADISData(object):
+    """Store ADIS Data"""
+
+    fs = 819.2
+
+    def __init__(self, timestamp, gyro_x, gyro_y, gyro_z, acc_x, acc_y, acc_z, mag_x, mag_y, mag_z):
+        self.time = timestamp
+        self.gyro_x, self.gyro_y, self.gyro_z = gyro_x, gyro_y, gyro_z
+        self.acc_x, acc_y, acc_z = acc_x, acc_y, acc_z
+        self.mag_x, mag_y, mag_z = mag_x, mag_y, mag_z
+
+        # Low pass for display
+        # Filter requirements.
+        order = 6
+        cutoff = 20   # desired cutoff frequency of the filter, Hz
+        nyq = 0.5 * self.fs
+        normal_cutoff = cutoff / nyq
+
+        # Get the filter coefficients so we can check its frequency response.
+        b, a = butter(order, normal_cutoff, btype='low', analog=False)
+        self.acc_x_filter = lfilter(b, a, self.acc_x)
+
+
+def load_ADIS_data(source):
+    columns = loadtxt(source, delimiter=',', unpack=True)
 
     timestamp = columns[1]
     gyro_x, gyro_y, gyro_z  = columns[3:6]
@@ -27,11 +52,11 @@ def ADIS_data():
 
     return timestamp, gyro_x, gyro_y, gyro_z, acc_x, acc_y, acc_z, mag_x, mag_y, mag_z
 
+
 def Venus_data():
 
     columns = loadtxt("../fc-data/V8A8.csv", delimiter=',', unpack=True)
 
-    seqn = columns[0]
     timestamp = columns[1]
     fix_mode = columns[2]
     num_sv = columns[3]
@@ -68,3 +93,7 @@ def cached_velocity():
     imuvel   = columns[1]
 
     return vel_time, imuvel
+
+
+# Load data!
+adis = ADISData(*load_ADIS_data('../fc-data/ADIS.csv'))
