@@ -1,6 +1,7 @@
 """Common data and constants from Launch 12
 """
 from numpy import loadtxt, subtract, divide
+from math import sqrt
 from scipy.signal import butter, lfilter
 
 # Pysical Constants
@@ -157,9 +158,35 @@ def load_ADIS_data(source):
     return timestamp, gyro_x, gyro_y, gyro_z, acc_x, acc_y, acc_z, mag_x, mag_y, mag_z
 
 
-def Venus_data():
+class VenusData(object):
 
-    columns = loadtxt("../fc-data/V8A8.csv", delimiter=',', unpack=True)
+    def __init__(self, timestamp, fix_mode, num_sv, TOW, latitude, longitude, altmsl, GDOP, PDOP, HDOP, VDOP, TDOP, vel_x, vel_y, vel_z):
+        self.time = timestamp
+        self.fix_mode = fix_mode
+        self.num_sv = num_sv
+        self.TOW = TOW
+        self.latitude = latitude
+        self.longitude = longitude
+        self.altmsl = altmsl
+        self.GDOP = GDOP
+        self.PDOP = PDOP
+        self.HDOP = HDOP
+        self.VDOP = VDOP
+        self.TDOP = TDOP
+        self.vel_x = vel_x
+        self.vel_y = vel_y
+        self.vel_z = vel_z
+
+        velocity = []
+        for i, t in enumerate(self.time):
+            v = sqrt((self.vel_x[i]*self.vel_x[i]) + (self.vel_y[i]*self.vel_y[i]) + (self.vel_z[i]*self.vel_z[i]))
+            velocity.append(v)
+
+        self.velocity = velocity
+
+def load_Venus_data(source):
+
+    columns = loadtxt(source, delimiter=',', unpack=True)
 
     timestamp = columns[1]
     fix_mode = columns[2]
@@ -202,3 +229,4 @@ def cached_velocity():
 # Load data!
 adis = ADISData(*load_ADIS_data('../fc-data/ADIS.csv'))
 bmp1 = BMP1Data(*load_BMP1_data('../fc-data/BMP1.csv'))
+venus = VenusData(*load_Venus_data('../full-flight/V8A8.csv'))
