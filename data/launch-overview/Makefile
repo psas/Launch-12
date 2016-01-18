@@ -11,7 +11,8 @@ LATEXARGS = --standalone \
 
 # List the files we want to build our pdf
 PDF=introduction.markdown \
-    IMU.md pressure.md \
+    IMU.md \
+    pressure.md \
     venus.md \
     RNH.md \
     vibration.md \

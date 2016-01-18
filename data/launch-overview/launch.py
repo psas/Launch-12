@@ -204,6 +204,79 @@ class VenusData(object):
         self.velocity = velocity
 
 
+class RNHPData(object):
+    """Load and store RNHP data from a csv made by psas_packet
+
+    :param str source: Filename of csv to unpack values from
+
+    """
+
+    fs = 1000.0
+
+    def __init__(self, source):
+        self.load_data(source)
+
+    def load_data(self, source):
+        columns = loadtxt(source, delimiter=',', unpack=True)
+
+        timestamp = columns[1]
+        self.port_1 = columns[2]
+        self.port_2 = columns[3]
+        self.port_3 = columns[4]
+        self.port_4 = columns[5]
+        self.umbilical = columns[6]
+        self.port_6 = columns[7]
+        self.port_7 = columns[8]
+        self.port_8 = columns[9]
+
+        timestamp = subtract(timestamp, t_0)
+        timestamp = divide(timestamp, 1e9)
+
+        self.time = timestamp
+
+
+class RNHHData(object):
+
+    def __init__(self, source):
+        self.load_data(source)
+
+    def load_data(self, source):
+        columns = loadtxt(source, delimiter=',', unpack=True)
+        rnhh_time = columns[1]
+        self.batt_temp       = columns[ 2]
+        self.TS1_temp        = columns[ 3]
+        self.TS2_temp        = columns[ 4]
+        self.temprange       = columns[ 5]
+        self.voltage         = columns[ 6]
+        self.current         = columns[ 7]
+        self.avg_current     = columns[ 8]
+        self.cell1_v         = columns[ 9]
+        self.cell2_v         = columns[10]
+        self.cell3_v         = columns[11]
+        self.cell4_v         = columns[12]
+        self.pack_voltage    = columns[13]
+        self.avg_voltage     = columns[14]
+
+        rnhh_time = subtract(rnhh_time, t_0)
+        rnhh_time = divide(rnhh_time, 1e9)
+
+        self.time = rnhh_time
+
+
+class SEQEData(object):
+
+    def __init__(self, source):
+        self.load_data(source)
+
+    def load_data(self, source):
+        columns = loadtxt(source, delimiter=',', unpack=True)
+        seqe_time = columns[1]
+        seqe_time = subtract(seqe_time, t_0)
+        seqe_time = divide(seqe_time, 1e9)
+
+        self.time = seqe_time
+
+
 def cached_altitude():
     columns = loadtxt("uncalibrated_integrated_altitude.csv", delimiter=',', unpack=True)
     alt_time = columns[0]
@@ -224,3 +297,6 @@ def cached_velocity():
 adis = ADISData('../fc-data/ADIS.csv')
 bmp1 = BMP1Data('../fc-data/BMP1.csv')
 venus = VenusData('../full-flight/V8A8.csv')
+rnhp = RNHPData('../fc-data/RNHP.csv')
+rnhh = RNHHData('../fc-data/RNHH.csv')
+seqe = SEQEData('../fc-data/SEQE.csv')
