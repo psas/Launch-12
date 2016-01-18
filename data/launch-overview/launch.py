@@ -158,7 +158,7 @@ class BMP1Data(object):
             temp = ((B5 + 8) >> 4) / 10.0
             temps.append(temp)
 
-        self.pressure = pressure
+        self.pressure = pressures
         self.temperature = temps
 
 
