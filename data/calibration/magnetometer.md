@@ -46,22 +46,43 @@ It does change, because we have a big offset in some direction. The other way to
 
 
 
-Correction Matrix:
-[[ 0.87036786 -0.12854332 -0.28368358]
- [-0.12854332  1.5103861  -0.04654303]
- [-0.28368358 -0.04654303  1.44080495]] 
+
+![](magnetometer_files/magnetometer_6_0.png)
+
+
+## Correction
+
+The calibration takes two parts, moving the center of the magnetometer back to 0, and fixing the elongation.
+
+
+
+Center offset (Hard Iron): `(11.275, 2.400, 1.975)`
+
+Ellipsoid Correction Matrix (Soft Iron):
+
+    |  0.87201  -0.12879  -0.28422 |
+    | -0.12879   1.51323  -0.04663 |
+    | -0.28422  -0.04663   1.44352 |
 
 
 
 
 
-![](magnetometer_files/magnetometer_7_0.png)
+
+
+![](magnetometer_files/magnetometer_9_0.png)
 
 
 
 
 
-![](magnetometer_files/magnetometer_8_0.png)
+![](magnetometer_files/magnetometer_10_0.png)
+
+
+
+
+
+![](magnetometer_files/magnetometer_11_0.png)
 
 
 
