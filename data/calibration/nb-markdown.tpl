@@ -1,1 +1,1 @@
-../docformat/nb-markdown.tpl
+../docformat/nb-markdown_png.tpl

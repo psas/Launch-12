@@ -24,8 +24,8 @@ From [NOAA's magnetic field calculator](https://www.ngdc.noaa.gov/geomag/magfiel
 
 
 
-    Our average total field strength measured 58.95 μT, compared to NOAA's 52.129 ± 0.152 μT.
-    
+Our average total field strength measured 58.95 μT, compared to NOAA's 52.129 ± 0.152 μT.
+
 
 
 We can also run a time series of the data and see how it changes. The total field strength shouldn't change, even as we move the rocket around.
@@ -42,6 +42,26 @@ It does change, because we have a big offset in some direction. The other way to
 
 
 ![](magnetometer_files/magnetometer_5_0.png)
+
+
+
+
+Correction Matrix:
+[[ 0.87036786 -0.12854332 -0.28368358]
+ [-0.12854332  1.5103861  -0.04654303]
+ [-0.28368358 -0.04654303  1.44080495]] 
+
+
+
+
+
+![](magnetometer_files/magnetometer_7_0.png)
+
+
+
+
+
+![](magnetometer_files/magnetometer_8_0.png)
 
 
 
