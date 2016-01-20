@@ -44,12 +44,6 @@ It does change, because we have a big offset in some direction. The other way to
 ![](magnetometer_files/magnetometer_5_0.png)
 
 
-
-
-
-![](magnetometer_files/magnetometer_6_0.png)
-
-
 ## Correction
 
 The calibration takes two parts, moving the center of the magnetometer back to 0, and fixing the elongation.
@@ -70,19 +64,31 @@ Ellipsoid Correction Matrix (Soft Iron):
 
 
 
+![](magnetometer_files/magnetometer_8_0.png)
+
+
+
+
+
 ![](magnetometer_files/magnetometer_9_0.png)
 
 
+## Correcting The Flight Data
+
+Using the above correction matrix we can fix the data from the flight.
 
 
 
-![](magnetometer_files/magnetometer_10_0.png)
+
+
+
+![](magnetometer_files/magnetometer_12_0.png)
 
 
 
 
 
-![](magnetometer_files/magnetometer_11_0.png)
+![](magnetometer_files/magnetometer_13_0.png)
 
 
 
