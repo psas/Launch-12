@@ -59,6 +59,8 @@ Ellipsoid Correction Matrix (Soft Iron):
     | -0.28422  -0.04663   1.44352 |
 
 
+Offset: `(0.18519, 0.08943, 0.14437)`
+
 
 
 
