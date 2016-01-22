@@ -52,15 +52,16 @@ The calibration takes two parts, moving the center of the magnetometer back to 0
 
 Center offset (Hard Iron): `(11.275, 2.400, 1.975)`
 
-Ellipsoid Correction Matrix (Soft Iron):
+Ellipsoid Correction Matrix **A** (Soft Iron):
 
     |  0.87201  -0.12879  -0.28422 |
     | -0.12879   1.51323  -0.04663 |
     | -0.28422  -0.04663   1.44352 |
 
 
-Offset: `(0.18519, 0.08943, 0.14437)`
+Offset vector **b**: `(0.18519, 0.08943, 0.14437)`
 
+For the equation corrected = **A** · (sample - **b**)
 
 
 
